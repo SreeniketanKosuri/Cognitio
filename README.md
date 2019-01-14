@@ -1,10 +1,10 @@
 # Cognitio
 A testing app built to test a user's knowledge on FBLA.
 
-![Cognitio](/images/cognitio_black.png)
+![Cognitio](/Images/cognitio_black.png)
 
 ## Main Directories:
-3 main directories exist to browse: [Source Code](https://github.com/SreeniketanKosuri/Cognitio/tree/master/Source%20Code/), [GUI Screenshots](https://github.com/SreeniketanKosuri/Cognitio/tree/master/GUI%20Screenshots), and [Application Installables](https://github.com/SreeniketanKosuri/Cognitio/tree/master/Application%20Installers)
+3 main directories exist to browse: [Source Code](Source%20Code/), [GUI Screenshots](https://github.com/SreeniketanKosuri/Cognitio/tree/master/GUI%20Screenshots), and [Application Installables](https://github.com/SreeniketanKosuri/Cognitio/tree/master/Application%20Installers)
 
 ### Source Code
 Within the "[Source Code](https://github.com/SreeniketanKosuri/Cognitio/tree/master/Source%20Code/)" directory, you can access the Xcode project and the Android Studio project.
