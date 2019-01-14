@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color1">#F2F2F2</color>
+    <color name="color2">#F67280</color>
+    <color name="color3">#C06C84</color>
+    <color name="color4">#6C5B7B</color>
+    <color name="color5">#355C7D</color>
+    <color name="titleColor">#EC5A5A</color>
+    <color name="triviaColor">#7BA0DF</color>
+    <color name="settingsColor">#31C79E</color>
+</resources>

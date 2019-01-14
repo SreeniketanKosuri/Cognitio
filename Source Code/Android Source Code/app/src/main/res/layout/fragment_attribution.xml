@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/attribution_box"/>
+                <ImageView
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="250dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="2dp"
+                    android:src="@drawable/attribution_white"/>
+            </RelativeLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="LottieFiles"
+                            android:fontFamily="@font/hkgrotesk"
+                            android:textSize="36sp"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Eddy Koek / LottieFiles"
+                            android:fontFamily="@font/hkgrotesk"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Andreas Hogeland / LottieFiles"
+                            android:fontFamily="@font/hkgrotesk"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="tsooooj / LottieFiles"
+                            android:fontFamily="@font/hkgrotesk"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="HK Grotesk"
+                            android:fontFamily="@font/hkgrotesk"
+                            android:textSize="36sp"
+                            android:textColor="@android:color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Copyright (c) 2015, Alfredo Marco Pradil"
+                            android:fontFamily="@font/hkgrotesk"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+                    </TableLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </TableLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

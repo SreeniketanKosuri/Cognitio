@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- All API Items -->
+        <item name="windowActionBar">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowBackground">@color/color1</item>
+        <item name="android:colorBackground">@color/color1</item>
+    </style>
+
+    <style name="TriviaSwitch" >
+        <item name="colorControlActivated">@color/triviaColor</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+</resources>
