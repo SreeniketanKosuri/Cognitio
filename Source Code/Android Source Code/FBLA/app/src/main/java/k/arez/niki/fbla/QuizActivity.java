@@ -20,7 +20,7 @@ public class QuizActivity extends AppCompatActivity {
     private boolean switchNationalSponsors;
     private boolean switchNationalOffice;
 
-    /*When back is pressed*/
+    /*When back UI button (not OS) is pressed*/
     public void returnButton(View view) {
         triviaQuestions.resetQuiz();
         Intent intent = new Intent(this, MainActivity.class);
@@ -74,7 +74,7 @@ public class QuizActivity extends AppCompatActivity {
                 this);
     }
 
-    /*Animation to run if the back arrow is pressed*/
+    /*Animation to run if the back arrow (OS) is pressed*/
     @Override
     public void finish() {
         super.finish();

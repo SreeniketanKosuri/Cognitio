@@ -23,7 +23,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/hkgrotesk"
                 android:textAlignment="center"
-                android:text="1/5"
+                android:text="0/5"
                 android:gravity="center_vertical|end"
                 android:textSize="20sp"
                 />

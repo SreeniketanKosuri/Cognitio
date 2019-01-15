@@ -300,34 +300,44 @@ public class TriviaQuestions {
 
             if (switchHistory) {
                 for (int j = 0; j < 7; j++) {
-                    selectedQuestions[j] = 1;
+                    if (selectedQuestions[j] == 0) {
+                        selectedQuestions[j] = 1;
+                    }
                 }
             }
             if (switchFBLAEvents) {
                 for (int k = 7; k < 14; k++) {
-                    selectedQuestions[k] = 1;
+                    if (selectedQuestions[k] == 0) {
+                        selectedQuestions[k] = 1;
+                    }
                 }
             }
             if (switchBusinessSkills) {
                 for (int l = 14; l < 21; l++) {
-                    selectedQuestions[l] = 1;
+                    if (selectedQuestions[l] == 0) {
+                        selectedQuestions[l] = 1;
+                    }
                 }
             }
             if (switchNationalSponsors) {
                 for (int m = 21; m < 28; m++) {
-                    selectedQuestions[m] = 1;
+                    if (selectedQuestions[m] == 0) {
+                        selectedQuestions[m] = 1;
+                    }
                 }
             }
             if (switchNationalOffice) {
                 for (int n = 28; n < 35; n++) {
-                    selectedQuestions[n] = 1;
+                    if (selectedQuestions[n] == 0) {
+                        selectedQuestions[n] = 1;
+                    }
                 }
             }
 
             while (selectedQuestions[questionNumber] != 1) {
                 questionNumber = rand.nextInt(34);
             }
-            selectedQuestions[questionNumber] = 0;
+            selectedQuestions[questionNumber] = 3;
 
             TextView triviaQuestion = activity.findViewById(R.id.triviaQuestion);
             Button button1 = activity.findViewById(R.id.triviaButton1);

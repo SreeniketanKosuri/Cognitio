@@ -4,6 +4,7 @@ package k.arez.niki.fbla;
 import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.CountDownTimer;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -26,11 +27,9 @@ import k.arez.niki.fbla.ViewPagerClasses.ViewPageAdapter;
 
 public class MainActivity extends AppCompatActivity {
     /*Define class variables*/
-    private RelativeLayout loadWrap;
     private ImageView logoView;
     private LottieAnimationView animationView;
     private CustomViewPager viewPager;
-    private TriviaQuestions triviaQuestions = new TriviaQuestions();
 
     private Utility util = new Utility();
     private Context mainContext = this;
@@ -64,15 +63,23 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /*Social media buttons*/
+    public void instagramButton(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/fbla_pbl/?hl=en"));
+        startActivity(browserIntent);
+    }
+    public void twitterButton(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/FBLA_National"));
+        startActivity(browserIntent);
+    }
+
     /*Functions to run when the viewpager loads the fragment*/
-    private void onMainLoad() {}
     private void onTriviaLoad() {
         RelativeLayout triviaOptions = findViewById(R.id.triviaOptions);
         if (triviaOptions != null) {
             util.fade("in", triviaOptions, null);
         }
     }
-    private void onAttributionLoad() {}
 
     /*Activity Functions*/
     @Override protected void onStart() { super.onStart(); }
@@ -90,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Initialize Views
-        loadWrap = findViewById(R.id.loadWrap);
         logoView = findViewById(R.id.logoView);
         animationView = findViewById(R.id.animView);
         viewPager = findViewById(R.id.viewPager);
@@ -107,11 +113,12 @@ public class MainActivity extends AppCompatActivity {
                 super.onPageSelected(position);
                 switch (position) {
                     case 0:
-                        onAttributionLoad();
+                        return;
                     case 1:
-                        onMainLoad();
+                        return;
                     case 2:
                         onTriviaLoad();
+                        return;
                 }
             }
         });

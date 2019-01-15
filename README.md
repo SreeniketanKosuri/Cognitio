@@ -10,7 +10,7 @@ There exist 3 main browsable directories: [Source Code](/Source%20Code/), [GUI S
 Within the "[Source Code](/Source%20Code/)" directory, you can access the Xcode project and the Android Studio project.
 
 **Android Studio:**
-In order to open the Android Studio project in the Android Studio IDE, download the folder titled "[Android Source Code](/Source%20Code/)" and place that folder in your Android Studio Projects directory.
+In order to open the Android Studio project in the Android Studio IDE, download the folder titled "[FBLA](/Source%20Code/Android%20Source%20Code)" and extract it to a known location. When you open the Android Studio menu, select "Open an existing Android Studio project" and navigate to your extracted "FBLA" folder.
 
 **Xcode:**
 To open the Xcode project, simply download the folder "[iOS Source Code](/Source%20Code/)" and open the project file with the Xcode application.
